@@ -1,0 +1,152 @@
+/* App.css */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.search-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  z-index: 20;
+  margin-bottom: 0.5rem;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-group input[type="text"] {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  box-sizing: border-box;
+}
+
+.input-group input[type="text"]:focus {
+  outline: none;
+  border-color: #66ccff;
+  box-shadow: 0 0 5px rgba(102, 204, 255, 0.5);
+}
+
+.search-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.15s ease;
+  box-shadow: 0 2px 5px rgba(0, 119, 204, 0.2);
+}
+
+.search-btn:hover {
+  background-color: #005fa3;
+  transform: translateY(-1px);
+}
+
+.search-btn:active {
+  background-color: #004d80;
+  transform: translateY(0);
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #1e1e1e;
+  color: white;
+  border: 1px solid #555;
+  max-height: 220px;
+  overflow-y: auto;
+  z-index: 200;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.suggestions li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #333;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin-bottom: 1rem;
+  z-index: 10;
+}
+
+.controls input,
+.controls button,
+.controls select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.controls button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.controls button:hover {
+  background-color: #004c99;
+}
+
+.toggle-option {
+  color: #ccc;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  margin: 0 auto 2rem;
+  z-index: 1;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.footer a {
+  color: #66ccff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
