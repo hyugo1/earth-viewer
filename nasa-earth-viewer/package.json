@@ -13,8 +13,8 @@
     "cesium": "^1.129.0",
     "framer-motion": "^12.23.6",
     "leaflet": "^1.9.4",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
