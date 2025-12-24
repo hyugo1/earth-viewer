@@ -1,12 +1,30 @@
-# React + Vite
+# NASA Earth Snapshot Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application to explore NASA Earth imagery in 2D (Leaflet) and 3D (CesiumJS) views. Users can search locations, select dates, toggle cloud layers, and switch between map views.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search locations via OpenStreetMap Nominatim API with autocomplete suggestions.  
+- Display satellite imagery from NASA GIBS for selected layers and dates.  
+- Switch between 2D Leaflet map and 3D Cesium globe.  
+- Toggle cloud layers and different satellite imagery layers (MODIS, VIIRS).  
+- Smooth transitions using Framer Motion.  
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19  
+- Vite 7  
+- CesiumJS 1.129  
+- Leaflet 1.9  
+- Framer Motion 12  
+- TailwindCSS 4  
+- NASA GIBS API for imagery  
+- OpenStreetMap Nominatim API for geocoding  
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/nasa-earth-viewer.git
+cd nasa-earth-viewer
